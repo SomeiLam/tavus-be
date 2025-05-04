@@ -1,0 +1,49 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Dependency directories
+/pnpm-lock.yaml
+/package-lock.json
+/yarn.lock
+
+# Compiled files
+/dist
+/build
+/coverage
+
+# TypeScript compiled files
+*.tsbuildinfo
+
+# IDE specific files (you can add your IDE here, e.g. VSCode, WebStorm)
+.idea/
+.vscode/
+
+# npm / yarn logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Optional directories to ignore
+/.cache
+/.npm
+
+# Bun specific files (if you're using Bun)
+bun.lockb
+
+.vercel
