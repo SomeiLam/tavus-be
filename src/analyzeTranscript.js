@@ -23,7 +23,7 @@ of what the user communicated throughout the conversation. The summary should
 reflect the overall quality of the user’s communication, considering the clarity, 
 relevance, engagement, and depth of their responses. 
 
-Afterward, provide an **overall score** for the quality of the user's content, 
+Afterward, provide an **overall score** for the quality of the user's content (mission values drive industry domain knowledge things like that), 
 on a scale of 1 to 10. The score should represent the overall effectiveness 
 and quality of the conversation, where 1 represents very poor content 
 (unclear, irrelevant, or lacking depth) and 10 represents excellent, 
