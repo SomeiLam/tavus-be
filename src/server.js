@@ -18,9 +18,10 @@ app.get('/', (req, res) => {
 app.post('/webhookListener', async (req, res) => {
   try {
     // Log the full received data for inspection
-    console.log('Received callback data:', JSON.stringify(req.body, null, 2));
+    console.log('Received callback data:', req.body);
     if (req.body.event_type === 'application.transcription_ready') {
-      const filteredTranscript = req.body.transcript
+      console.log('Transcription:', req.body.properties.transcript);
+      const filteredTranscript = req.body.properties.transcript
         .filter(entry => entry.role === 'user' || entry.role === 'assistant') // Keep only assistant and user roles
         .map(entry => `${entry.role}: ${entry.content}`) // Flatten with role and content
         .join(' ');
