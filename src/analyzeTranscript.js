@@ -23,7 +23,8 @@ of what the user communicated throughout the conversation. The summary should
 reflect the overall quality of the user’s communication, considering the clarity, 
 relevance, engagement, and depth of their responses. 
 
-Afterward, provide an **overall score** for the quality of the user's content (mission values drive industry domain knowledge things like that), 
+Afterward, provide an **overall score** for the quality of the user's content 
+(on factors such as mission alignment, values, industry knowledge, etc.) 
 on a scale of 1 to 10. The score should represent the overall effectiveness 
 and quality of the conversation, where 1 represents very poor content 
 (unclear, irrelevant, or lacking depth) and 10 represents excellent, 
@@ -37,19 +38,19 @@ ${transcript}
 
 ### Output:
 
-Please return **only one JSON object** that contains:
-- A **score** between 1 and 10, representing the overall quality of the user's content.
-- A **summary** that provides an overall evaluation of the user's communication throughout the entire conversation.
+- Please return **only one valid JSON object** (no extra characters or markdown). The JSON should contain:
+    - A **score** (integer) between 1 and 10, representing the overall quality of the user's content.
+    - A **summary** (string) that provides an overall evaluation of the user's communication throughout the entire conversation.
 
 Example Output Structure:
 
 {
-  "score": 7,  // An overall score for the quality of the user's content
+  "score": 7,
   "summary": "The user communicated well in the conversation, providing clear but brief responses. The conversation remained mostly on topic, though the user didn't elaborate much. The overall content was good but lacked depth in some areas."
 }
 
-- Do **not include any intermediate analysis or detailed breakdown** of the conversation.
-- **Only return the final score and summary**, based on your evaluation of the entire conversation.
+- Do **not include any intermediate analysis, code formatting, or markdown** (such as ```json or ```) in your output.
+- **Only return the final score and summary** in valid JSON format, based on your evaluation of the entire conversation.
 
 `
   try {
