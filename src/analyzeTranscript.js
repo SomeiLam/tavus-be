@@ -49,7 +49,7 @@ Example Output Structure:
   "summary": "The user communicated well in the conversation, providing clear but brief responses. The conversation remained mostly on topic, though the user didn't elaborate much. The overall content was good but lacked depth in some areas."
 }
 
-- Do **not include any intermediate analysis, code formatting, or markdown** (such as ```json or ```) in your output.
+- Do **not include any intermediate analysis, code formatting, or markdown** in your output.
 - **Only return the final score and summary** in valid JSON format, based on your evaluation of the entire conversation.
 
 `
