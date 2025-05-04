@@ -1,5 +1,5 @@
 import { ref, set } from 'firebase/database';
-import { database } from './firebase.js';
+import { database } from '../firebase.js';
 
 // Function to save conversation summary data
 export async function saveConversationSummary(conversation_id, score, summary) {
